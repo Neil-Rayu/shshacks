@@ -1,0 +1,233 @@
+/*Body*/
+*{
+  padding:0;
+  margin:0;
+}
+body{
+  padding:0;
+  margin:0;
+  box-sizing:0;
+  background:#121212;
+  color: #e6eded;
+  font-family: 'Ubuntu', sans-serif;
+}
+/*Main Container*/
+.container{
+  display:grid;
+}
+.backgroundPicture{
+  display:grid;
+  place-items:center;
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 4rem;
+  positive:relative;
+}
+/*Main Title*/
+.backgroundPicture h1{
+  font-size: 5rem;
+  position:absolute;
+  top:6rem;
+  left: 3.5rem;
+}
+/*Main Image*/
+.backgroundPicture img{
+  margin-top: 10rem;
+  width: 55rem;
+  height: 40rem;
+}
+/*Nav Links, Navigation Bar*/
+nav {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #e6eded;
+  opacity: 0.6;
+  font-size: 1.5rem;
+  padding: 7px;
+  position: relative;
+}
+nav a{
+  opacity: 0.5;
+}
+
+
+button{
+  background:#121212;
+  border:none;
+  color: #e6eded;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a::after,
+a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background:#A0C4E2;
+  transition: width ease-in 200ms;
+}
+
+a::before {
+  top: 0;
+}
+
+a:hover::before,
+a:hover::after {
+  width: 100%;
+  transition: width ease-in 200ms;
+}
+
+.active{
+  opacity: 1;  
+}
+
+/*Creators*/
+
+h2{
+  text-align:center;
+  margin-bottom: 2rem;
+}
+
+.creators img{
+  width:7.5rem;
+  height:6rem;
+  border-radius: 50%;
+  outline: 1px #A0C4E2 solid;
+}
+
+.creators{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+
+h1{
+  font-size: 1.5rem;
+}
+
+.creators p{
+  text-align:center;
+}
+
+.Neil, .Kurinji, .Aidan, .Niteesh{
+  margin: 1rem;
+  padding: 10px;
+  display:grid;
+  place-items: center;
+  border: 1px #A0C4E2 solid;
+  width: 20%;
+  height: 15rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+
+.tutorials{
+  width: 24%;
+  border: 1px white solid;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+}
+
+.info p{
+  margin: 5rem 4rem 4rem 4rem;
+  text-align:center;
+}
+
+.learn-stuffs{
+  margin-top: 10rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/*DropDown Button*/
+.dropButton {
+  border: none;
+  opacity: 0.5;
+  background: #121212;
+  font-family: 'Ubuntu', sans-serif;
+  height:1.5rem;
+  color: #e1eded;
+}
+
+.dropMenu {
+  position: relative;
+  display: inline-block;
+  margin-top:6px;
+}
+
+.options {
+  margin-top:9px;
+  display: none;
+  position: absolute;
+  background-color:#e6eded;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.options a {
+  color: #121212;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  opacity: 0.5;
+}
+
+.options a:hover {
+  background-color: #ddd;
+  opacity:1;
+}
+
+.dropMenu:hover .options {
+  display: block;
+}
+
+#actice{
+  opacity: 1;
+}
+
+/*Solo.html*/
+
+label{
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+ select{
+   margin-left:15rem;
+   margin-top: -1.5rem;
+   padding: 0.5rem;
+   width: 8rem;
+   height:2rem;
+ }
+
+.submit{
+  height: 2rem;
+  width:5rem;
+  position:absolute;
+  left: 24rem;
+  top: 17.6rem;
+}
+
+.submit:hover{
+  outline: 1px #A0C4E2 solid;
+}
+

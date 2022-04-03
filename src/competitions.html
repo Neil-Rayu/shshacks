@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/compete.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?      family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="backgroundPicture">
+        <h1>Competitions</h1>
+        <nav>
+          <a href="index.html"><div>HOME</div></a>
+
+          <div class="dropMenu">
+            <a href="learn.html">
+              <button class="dropButton">LEARN</button>
+              <div class="options">
+                <a href="#">Tutorial</a>
+                <a href="solo.html">Solo</a>
+                <a href="coOp.html">Co-op</a>
+              </div>
+            </a>
+          </div>
+
+          <a class="active" href="competitons.html"><div>COMPETE</div></a>
+
+          <a href="#"><button>SIGN IN</button></a>
+        </nav>
+      </div>
+      <label for="mathTopic">Choose a Math Topic:</label>
+      <select name="mathType" id="mathTopic">
+        <option value="Addition">Addition</option>
+        <option value="Subtraction">Subtraction</option>
+        <option value="Multiplication">Multiplication</option>
+        <option value="Division">Division</option>
+        <option value="Miscellaneous">Miscellaneous</option>
+      </select>
+      <div class="join">
+        <div>
+          Player 1
+          <div id="player1" class="connected" />
+          <span id="user1"></span>
+        </div>
+        <div>
+          Player 2
+          <div id="player2" class="connected" />
+          <span id="user2"></span>
+        </div>
+      </div>
+    </div>
+    <div id="problem-area"></div>
+    <form id="answer">
+      <input type="number" id="value" />
+      <input type="submit" value="Submit" />
+    </form>
+    <div class="leaderboard">
+      <div class="namesDiv">
+        <h1>NAMES</h1>
+        <ul id="names"></ul>
+      </div>
+      <div class="winsDiv">
+        <h1>WINS</h1>
+        <ul id="Wins"></ul>
+      </div>
+    </div>
+    <script type="module" src="/src/compete.ts"></script>
+  </body>
+</html>

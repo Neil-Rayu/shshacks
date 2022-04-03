@@ -1,0 +1,61 @@
+.connected {
+  border: 3px solid white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.join{
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+.match{
+  
+}
+
+.form-container{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.container{
+}
+
+.leaderboard{
+  padding: 3rem;
+  margin: 2rem;
+  display:flex;
+  flex-direction:row;
+  gap: 10px;
+  width: 22rem;
+  height: 50rem;
+  border: 1px  #A0C4E2 solid;
+}
+
+.leaderboard h1{
+  display:grid;
+  place-items:center;
+  outline: 1px  #A0C4E2 solid;
+  width: 10rem;
+  height: 3rem;
+}
+
+.names, .Wins{
+  display:flex;
+  flex-direction: column;
+}
+
+.namesDiv, .winsDiv{
+  display:flex;
+  flex-direction: column;
+}
+
+li{
+  padding: 10px;
+  text-align: center;
+  list-style:none;
+}
